@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dictionary_bigdiv{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:olive;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dictionary_div{
+  width: 500px;
+  max-width: 100%;
+  border-radius: 10px;
+  padding: 0px 30px 30px 30px;
+  background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.dictionary_div h1{
+  padding: 20px 0px;
+}
+.dictionary_div form{
+  border: 1px solid rgba(153, 152, 152, 0.37);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+}
+.dictionary_div form input{
+  outline: none;
+  border: none;
+
+}
+.dictionary_results{
+  border-left: 3px solid olive;
+  width: 100%;
+
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0px;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.dictionary_results button{
+  border: 1px solid olive;
+  padding: 5px 10px;
+  background-color: olive;
   color: white;
+  border-radius: 10px;
+  border-top: none;
+  border-bottom: none;
+  cursor: pointer;
+  transition: 0.5s;
 }
-
-.App-link {
-  color: #61dafb;
+.dictionary_results button:hover{
+  background-color: white;
+  color: black;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dictionary_results span{
+  font-size: 14px;
+  color: gray;
+}
+.span{
+  padding: 10px 0px;
+  color: gray;
 }
